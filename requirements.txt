@@ -1,0 +1,5 @@
+docling
+google-genai
+pydantic
+python-dotenv
+tenacity
