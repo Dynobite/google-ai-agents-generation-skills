@@ -1,0 +1,9 @@
+## Privacy and security risks
+
+Memories are derived from and include user data, so they require stringent privacy and security controls. A useful analogy is to think of the system's memory as a secure corporate archive managed by a professional archivist, whose job is to preserve valuable knowledge while protecting the company.
+
+The cardinal rule for this archive is data isolation. Just as an archivist would never mix confidential files from different departments, memory must be strictly isolated at the user or tenant level. An agent serving one user must never have access to the memories of another, enforced using restrictive Access Control Lists (ACLs). Furthermore, users must have programmatic control over their data, with clear options to opt-out of memory generation or request the deletion of all their files from the archive.
+
+Before filing any document, the archivist performs critical security steps. First, they meticulously go through each page to redact sensitive personal information (PII), ensuring knowledge is saved without creating a liability. Second, the archivist is trained to spot and discard forgeries or intentionally misleading documents-a safeguard against memory poisoning 28 . In the same way, the system must validate and sanitize information before committing it to long-term memory to prevent a malicious user from corrupting the agent's persistent knowledge through prompt injection. The system must include safeguards like Model Armor to validate and sanitize information before committing it to long-term memory 29 .
+
+Additionally, there is an exfiltration risk if multiple users share the same set of memories, like with procedural memories (which teach an agent how to do something). For example, if a procedural memory from one user is used as an example for another-like sharing a memo company-wide-the archivist must first perform rigorous anonymization to prevent sensitive information from leaking across user boundaries.

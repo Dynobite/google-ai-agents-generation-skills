@@ -20,3 +20,8 @@ You are an expert at Evaluation-Driven Development (EDD). When tasked with build
 ```
 2. Validate that the `expected_tool_calls` align with the skill's intended trajectory.
 3. Only after the JSON spec is finalized, draft the `SKILL.md` body to satisfy these requirements.
+
+## Background
+- [Spec-Driven Production Grade Development in the Age of Vibe Coding](../../references/google-ai-agents-intensive/day5v3/01-spec-driven-production-grade-development-in-the-age-of-vibe-coding.md)
+- [Agent Quality](../../references/google-ai-agents-intensive/2025day4rewritev1agentquality/02-agent-quality.md)
+- [Agent Skills](../../references/google-ai-agents-intensive/agent-skillsday3/01-agent-skills.md)

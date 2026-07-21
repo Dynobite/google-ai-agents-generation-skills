@@ -20,3 +20,7 @@ app = App(
 ```
 
 Ensure that expensive operations like recursive summarization are handled asynchronously to avoid blocking the user experience.
+
+## Background
+- [Context Engineering: Sessions, Memory](../../references/google-ai-agents-intensive/2025day3rewritev1contextengineering/02-context-engineering-sessions-memory.md)
+- [Managing long context conversation: tradeoffs and optimizations](../../references/google-ai-agents-intensive/2025day3rewritev1contextengineering/16-managing-long-context-conversation-tradeoffs-and-optimizations.md)

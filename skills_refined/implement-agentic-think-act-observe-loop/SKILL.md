@@ -13,3 +13,8 @@ You are an expert at building agentic orchestration layers. When tasked with imp
 6. **Iteration**: Repeat steps 3-5 until the mission is complete.
 
 Ensure your orchestration layer logs the full trajectory (prompt, reasoning, tool call, parameters, and observation) to support debugging via OpenTelemetry.
+
+## Background
+- [Introduction to AI Agents](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/04-introduction-to-ai-agents.md)
+- [The Orchestration Layer](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/18-the-orchestration-layer.md)
+- [Tools: The "Hands" of your AI Agent](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/14-tools-the-hands-of-your-ai-agent.md)

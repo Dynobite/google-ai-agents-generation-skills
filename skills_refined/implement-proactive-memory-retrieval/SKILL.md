@@ -21,3 +21,7 @@ agent = LlmAgent(
     before_model_callback=retrieve_memories_callback,
 )
 ```
+
+## Background
+- [Context Engineering: Sessions, Memory](../../references/google-ai-agents-intensive/2025day3rewritev1contextengineering/02-context-engineering-sessions-memory.md)
+- [Augment with Context](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/21-augment-with-context.md)

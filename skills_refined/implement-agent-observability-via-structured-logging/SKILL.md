@@ -30,3 +30,8 @@ You are an expert at implementing observability for autonomous agents. When task
 }
 ```
 5. Configure your logging framework to allow dynamic verbosity levels (e.g., INFO for production, DEBUG for development) without requiring code changes.
+
+## Background
+- [Observability: Seeing Inside the Agent's Mind](../../references/google-ai-agents-intensive/2025day4rewritev1agentquality/31-observability-seeing-inside-the-agents-mind.md)
+- [Debug with OpenTelemetry Traces: Answering "Why?"](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/28-debug-with-opentelemetry-traces-answering-why.md)
+- [Observability: Auditing the Agent's Mind (Pillar 6 & 7)](../../references/google-ai-agents-intensive/vibe-coding-agent-security-and-evaluationday4/21-observability-auditing-the-agents-mind-pillar-6-amp-7.md)

@@ -1,0 +1,3 @@
+## Invisible Payloads and Repository Poisoning
+
+Before deploying defensive operations, we must understand the stealthy nature of agentic threats. Repositories themselves act as a highly effective attack vector. Threat actors can compromise repositories by inserting zero-width Unicode characters or homoglyphs directly into the codebase. Knostic warns that these "invisible payloads hide in plain sight and bypass human review". Because agents manipulate and replicate code much faster than a human developer, a single hidden payload can "spread across hundreds of files in minutes" before anyone notices. 6

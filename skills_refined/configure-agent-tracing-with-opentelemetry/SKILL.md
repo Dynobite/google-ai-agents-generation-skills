@@ -34,3 +34,8 @@ You are an expert at Agent Ops. When instrumenting your agent, follow these step
    - The raw observation returned by the tool.
 3. **Visualization**: Export traces to a platform like Google Cloud Trace to enable visual debugging of reasoning chains.
 4. **Feedback Loop**: Capture user feedback (e.g., thumbs down) and link it to the specific trace ID to facilitate root cause analysis and automated test case generation.
+
+## Background
+- [Debug with OpenTelemetry Traces: Answering "Why?"](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/28-debug-with-opentelemetry-traces-answering-why.md)
+- [Observability: Seeing Inside the Agent's Mind](../../references/google-ai-agents-intensive/2025day4rewritev1agentquality/31-observability-seeing-inside-the-agents-mind.md)
+- [Tracing the "Vibe Trajectory" and Content Scanning](../../references/google-ai-agents-intensive/vibe-coding-agent-security-and-evaluationday4/22-tracing-the-vibe-trajectory-and-content-scanning.md)

@@ -1,0 +1,3 @@
+## Sandboxes and Supply Chain Defence (Pillars 1 &amp; 4)
+
+The core mechanism of vibe coding relies on dynamically translating human intent into executable logic on the fly. However, vibe-coded agents rarely write perfect code on their first attempt. The reality of intent-driven development is a high-speed, iterative cycle: the agent writes a script, executes it, reads the resulting error logs, and autonomously rewrites the logic until it aligns with the user's vibe. Because this generative process introduces high variability, the resulting code cannot be implicitly trusted. Running these dynamically generated scripts directly alongside the root agent or on standard host infrastructure introduces an unacceptable level of risk.

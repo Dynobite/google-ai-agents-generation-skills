@@ -20,3 +20,8 @@ def session_outcome(trace):
         "cost_to_converge": trace.total_token_cost_usd,
     }
 ```
+
+## Background
+- [Measure What Matters: Instrumenting Success Like an A/B Experiment](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/25-measure-what-matters-instrumenting-success-like-an-ab-experiment.md)
+- [Debug with OpenTelemetry Traces: Answering "Why?"](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/28-debug-with-opentelemetry-traces-answering-why.md)
+- [Observability: Seeing Inside the Agent's Mind](../../references/google-ai-agents-intensive/2025day4rewritev1agentquality/31-observability-seeing-inside-the-agents-mind.md)

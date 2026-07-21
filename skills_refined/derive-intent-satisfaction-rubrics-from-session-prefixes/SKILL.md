@@ -22,3 +22,7 @@ score = client.models.generate_content(
     contents=f"Does this output satisfy {criteria}? Score 1-5 with rationale. Output: {agent_response}",
 ).parsed
 ```
+
+## Background
+- [Vibe Coding Agent Security and Evaluation](../../references/google-ai-agents-intensive/vibe-coding-agent-security-and-evaluationday4/01-vibe-coding-agent-security-and-evaluation.md)
+- [Agent Quality](../../references/google-ai-agents-intensive/2025day4rewritev1agentquality/02-agent-quality.md)

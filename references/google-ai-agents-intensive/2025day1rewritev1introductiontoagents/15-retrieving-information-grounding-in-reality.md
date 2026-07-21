@@ -1,0 +1,3 @@
+## Retrieving Information: Grounding in Reality
+
+The most foundational tool is the ability to access up-to-date information. RetrievalAugmented Generation (RAG) gives the agent a "library card" to query external knowledge, often stored in Vector Databases or Knowledge Graphs , ranging from internal company documents to web knowledge via Google Search. For structured data, Natural Language to SQL (NL2SQL) tools allow the agent to query databases to answer analytic questions like, "What were our top-selling products last quarter?" By looking things up before speakingwhether in a document or a database-the agent grounds itself in fact, dramatically reducing hallucinations.

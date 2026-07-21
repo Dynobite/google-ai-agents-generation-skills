@@ -1,0 +1,7 @@
+## A2UI: A Secure Implementation
+
+A2UI is a framework-agnostic standard for declaring UI intent - Google's opensource way of letting agents describe interfaces in a portable, declarative format instead of streaming raw data or shipping arbitrary code.
+
+To see why a format matters here, think about how a composer ships their work. They don't hand musicians a recording: they hand them sheet music. The same score plays on a piano, an orchestra, or a synthesizer; each instrument interprets the notation through its own voice. A2UI is sheet music for UI: the agent writes the intent (what to render and how it composes), and any renderer (e.g. React, Angular, Lit, Flutter, Jetpack Compose, SwiftUI, etc) performs it natively on the device the user actually has. The agent doesn't need to know whether you're targeting web, mobile, wearable, or appliance, it just knows the catalog of available components and any examples you want to give.
+
+That separation of concerns is what makes A2UI safe. The agent doesn't generate executable code (a security nightmare) and it doesn't ship pre-rendered pixels (which can't reflow or stay interactive). Instead it requests components from a trusted catalog (e.g. buttons, text fields, cards, your own charts) and the client renders them using its own component library. The catalog defines what's available, the agent decides how to arrange them, the client assembles the final structure. Compositional, like LEGO blocks, but the blocks are UI components from your design system.

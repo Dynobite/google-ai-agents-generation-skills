@@ -1,0 +1,7 @@
+## The Art of Agent Evaluation: Judging the Process
+
+In Chapter 1, we established the fundamental shift from traditional software testing to modern AI evaluation. Traditional testing is a deterministic process of verification - it asks, 'Did we build the product right?' against a fixed specification. This approach fails when a system's core logic is probabilistic, because non-deterministic output may be more likely to introduce subtle degradations of quality that do not result in explicit crashes and may not be repeatable.
+
+Agent evaluation, by contrast, is a holistic process of validation . It asks a far more complex and essential strategic question: 'Did we build the right product?' This question is the strategic anchor for the "Outside-In" evaluation framework, representing the necessary shift from internal compliance to judging the system's external value and alignment with user intent. This requires us to assess the overall quality, robustness, and user value of an agent operating in a dynamic world.
+
+The rise of AI agents, which can plan, use tools, and interact with complex environments, significantly complicates this evaluation landscape. We must move beyond "testing" an output and learn the art of "evaluating" a process. This chapter provides the strategic framework for doing just that: judging the agent's entire decision-making trajectory, from initial intent to final outcome.

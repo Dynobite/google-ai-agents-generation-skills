@@ -18,3 +18,8 @@ You are an expert at Agent Skill evaluation. When tasked with validating a skill
   "reasoning": "..."
 }
 ```
+
+## Background
+- [Agent Skills](google-ai-agents-intensive/agent-skillsday3/01-agent-skills.md)
+- [Agent Quality](google-ai-agents-intensive/2025day4rewritev1agentquality/02-agent-quality.md)
+- [Spec-Driven Production Grade Development in the Age of Vibe Coding](google-ai-agents-intensive/day5v3/01-spec-driven-production-grade-development-in-the-age-of-vibe-coding.md)

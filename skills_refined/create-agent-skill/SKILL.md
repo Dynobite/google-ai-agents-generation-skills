@@ -25,3 +25,7 @@ license: MIT
 ---
 ```
 4. Ensure the description field is <= 1024 characters and clearly defines the routing logic.
+
+## Background
+- [Agent Skills](../../references/google-ai-agents-intensive/agent-skillsday3/01-agent-skills.md)
+- [Core Agent Architecture: Model, Tools, and Orchestration](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/12-core-agent-architecture-model-tools-and-orchestration.md)

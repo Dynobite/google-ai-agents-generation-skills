@@ -20,3 +20,8 @@ steps:
     env:
       - 'EVAL_THRESHOLD=0.9'
 ```
+
+## Background
+- [Evaluation as a Quality Gate](../../references/google-ai-agents-intensive/2025day5rewritev1prototype/09-evaluation-as-a-quality-gate.md)
+- [Metrics-Driven Development: Your Go/No-Go for Deployment](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/27-metrics-driven-development-your-gono-go-for-deployment.md)
+- [The Automated CI/CD Pipeline](../../references/google-ai-agents-intensive/2025day5rewritev1prototype/10-the-automated-cicd-pipeline.md)

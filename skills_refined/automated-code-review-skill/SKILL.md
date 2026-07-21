@@ -22,3 +22,8 @@ Output Format:
 ```
 
 Deploy this as a Tier 2 or Tier 3 agent by triggering it via CI/CD webhooks (e.g., GitHub Actions) to run in non-interactive mode.
+
+## Background
+- [Code Review and Deployment](../../references/google-ai-agents-intensive/day1v3/18-code-review-and-deployment.md)
+- [Code Reviews](../../references/google-ai-agents-intensive/day5v3/23-code-reviews.md)
+- [Security and Privacy: Hardening the Agentic Frontier](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/39-security-and-privacy-hardening-the-agentic-frontier.md)

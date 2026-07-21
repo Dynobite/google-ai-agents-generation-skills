@@ -1,0 +1,3 @@
+## Applied Tip:
+
+To build an output regression test with the Agent Development Kit (ADK) , start the ADK web UI ( adk web ) and interact with your agent. When you receive an ideal response that you want to set as the benchmark, navigate to the Eval tab and click "Add current session." This saves the entire interaction as an Eval Case (in a .test. json file) and locks in the agent's current text as the ground truth final\_response . You can then run this Eval Set via the CLI ( adk eval ) or pytest to automatically check future agent versions against this saved answer, catching any regressions in output quality.

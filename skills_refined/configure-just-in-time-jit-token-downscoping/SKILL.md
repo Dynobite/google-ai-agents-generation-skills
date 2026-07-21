@@ -9,3 +9,8 @@ You are an expert at Identity and Access Management for AI agents. When implemen
 2. Avoid using long-lived service identities; instead, generate hyper-restricted credentials that are scoped only to the specific data sources required for the current task.
 3. Configure the system to expire these tokens immediately upon task completion.
 4. Implement file-tree allowlists that confine read/write operations to specific project directories, explicitly denying access to secrets, build scripts, and production manifests.
+
+## Background
+- [Agent Identity: A New Class of Principal](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/35-agent-identity-a-new-class-of-principal.md)
+- [Policies to Constrain Access](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/36-policies-to-constrain-access.md)
+- [Identity, Trust & High-Stakes Actions (Pillar 5)](../../references/google-ai-agents-intensive/vibe-coding-agent-security-and-evaluationday4/12-identity-trust-amp-high-stakes-actions-pillar-5.md)

@@ -1,0 +1,11 @@
+## Agents and Humans
+
+The most common form of agent-human interaction is through a user interface. In its simplest form, this is a chatbot, where a user types a request and the agent, acting as a backend service, processes it and returns a block of text. More advanced agents can provide structured data, like JSON, to power rich, dynamic front-end experiences. Human in the loop (HITL) interaction patterns include intent refinement, goal expansion, confirmation, and clarification requests.
+
+Computer use is a category of tool where the LM takes control of a user interface, often with human interaction and oversight. A computer use enabled agent can decide that the next best action is to navigate to a new page, highlight a specific button, or pre-fill a form with relevant information 27 .
+
+Instead of an agent using an interface on behalf of the user, the LM can change the UI to meet the needs of the moment. This can be done with Tools which control UI ( MCP UI ) 28 , or specialized UI messaging systems which can sync client state with an agent ( AG UI ) 29 , and even generation of bespoke interfaces ( A2UI ) 30 . These dynamic interactions are now natively supported via the Agent-to-UI protocol (A2UI) in the Gemini Enterprise app, allowing custom agents to dynamically generate rich, native UI components,like interactive data visualizations and structured forms,directly within the user's workspace.
+
+Of course, human interaction is not limited to screens and keyboards. Advanced agents are breaking the text barrier and moving into real-time, multimodal communication with "live mode" creating a more natural, human-like connection. Technologies like the Gemini Live API 31 enable bidirectional streaming, allowing a user to speak to an agent and interrupt it, just as they would in a natural conversation.
+
+This capability fundamentally changes the nature of agent-human collaboration. With access to a device's camera and microphone, the agent can see what the user sees and hear what they say, responding with generated speech at a latency that mimics human conversation. This opens up a vast array of use cases that are simply impossible with text, from a technician receiving hands-free guidance while repairing a piece of equipment to a shopper getting real-time style advice. It makes the agent a more intuitive and accessible partner.

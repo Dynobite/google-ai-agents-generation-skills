@@ -23,3 +23,8 @@ Rubric:
 Provide your response in JSON format.
 ```
 5. Integrate this Critic Agent into your CI/CD pipeline to automatically flag process failures even when the final output appears correct.
+
+## Background
+- [Quality Instead of Pass/Fail: Using a LM Judge](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/26-quality-instead-of-passfail-using-a-lm-judge.md)
+- [Agent-as-a-Judge](../../references/google-ai-agents-intensive/2025day4rewritev1agentquality/22-agent-as-a-judge.md)
+- [The Art of Agent Evaluation: Judging the Process](../../references/google-ai-agents-intensive/2025day4rewritev1agentquality/11-the-art-of-agent-evaluation-judging-the-process.md)

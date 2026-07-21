@@ -1,0 +1,7 @@
+## The Extensibility Layer: A2A as the Foundation for UI and Commerce
+
+By resolving the fragmentation inherent in the early AI ecosystem, A2A protocol establishes a unified communication layer which in turn enables developers to build atop this standardized substrate. While the core A2A protocol functions as a transport and negotiation backbone, realizing rich, transactional applications very often demand highly specialized capabilities.
+
+This requirement is addressed through the mechanism of A2A Extensions 1 . It provides a standardized pattern for agents to securely advertise, negotiate, and execute optional, higher-order functionalities that transcend basic message passing.
+
+Three foundational frameworks that operate as native extensions atop the core A2A foundation include the Agent-to-User Interface (A2UI), designed to generate dynamic, stateful user experiences; the Universal Commerce Protocol (UCP), engineered to facilitate secure, autonomous agentic commerce; and the Agent Payments Protocol (AP2) which lays the groundwork for trusted, verifiable agentic payments. All three are discussed in more detail in the following sections.

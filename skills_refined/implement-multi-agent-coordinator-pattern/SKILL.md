@@ -10,3 +10,8 @@ You are an expert at multi-agent architecture. When building a collaborative sys
 3. **Task Delegation**: Use an A2A (Agent-to-Agent) protocol to send task requests from the Coordinator to Specialists.
 4. **Aggregation**: Configure the Coordinator to collect streaming updates or final results from Specialists to synthesize the final response.
 5. **Discovery**: Use an Agent Registry to allow the Coordinator to discover available Specialists and their capabilities via Agent Cards.
+
+## Background
+- [Level 3: The Collaborative Multi-Agent System](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/10-level-3-the-collaborative-multi-agent-system.md)
+- [Multi-Agent Systems and Design Patterns](../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/22-multi-agent-systems-and-design-patterns.md)
+- [Agent-to-Agent (A2A) Interoperability](../../references/google-ai-agents-intensive/agent-tools-interoperabilityday2/17-agent-to-agent-a2a-interoperability.md)

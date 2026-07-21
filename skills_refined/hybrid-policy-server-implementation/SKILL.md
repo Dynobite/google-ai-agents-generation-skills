@@ -21,3 +21,8 @@ class PolicyService:
         response = client.models.generate_content(model="gemini-3.1-pro", contents=prompt)
         return not response.text.strip().upper().startswith("VIOLATION")
 ```
+
+## Background
+- [Policy Server](https://../../references/google-ai-agents-intensive/day5v3/34-policy-server.md)
+- [Securing a Single Agent: The Trust Trade-Off](https://../../references/google-ai-agents-intensive/2025day1rewritev1introductiontoagents/34-securing-a-single-agent-the-trust-trade-off.md)
+- [Implementing Guardrails](https://../../references/google-ai-agents-intensive/day5v3/29-implementing-guardrails.md)

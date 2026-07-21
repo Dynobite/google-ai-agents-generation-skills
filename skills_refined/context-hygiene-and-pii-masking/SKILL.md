@@ -21,3 +21,8 @@ def resolve_context(template_str, override_state=None):
 ```
 
 Integrate this into your tool execution framework to intercept and sanitize all incoming arguments before they reach the tool execution layer.
+
+## Background
+- [Context Hygiene & Prompt Sanitization](../../references/google-ai-agents-intensive/day5v3/35-context-hygiene-amp-prompt-sanitization.md)
+- [Implementing a Dynamic ContextResolver](../../references/google-ai-agents-intensive/day5v3/36-implementing-a-dynamic-contextresolver.md)
+- [Security and Privacy: Protecting Your Data](../../references/google-ai-agents-intensive/2025day4rewritev1agentquality/49-2-security-amp-pii-protecting-your-data.md)

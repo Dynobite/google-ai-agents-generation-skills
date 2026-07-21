@@ -28,3 +28,8 @@ root_agent = Agent(
 ```
 
 **Note**: This skill explicitly defines the workflow from the specialized sub-agent's perspective (receiving and returning tasks).
+
+## Background
+- [Agent-to-Agent (A2A) Interoperability](../../references/google-ai-agents-intensive/agent-tools-interoperabilityday2/17-agent-to-agent-a2a-interoperability.md)
+- [Connecting Remote A2A Agents](../../references/google-ai-agents-intensive/agent-tools-interoperabilityday2/26-connecting-remote-a2a-agents.md)
+- [A2A - Reusability and Standardization](../../references/google-ai-agents-intensive/2025day5rewritev1prototype/24-a2a-reusability-and-standardization.md)

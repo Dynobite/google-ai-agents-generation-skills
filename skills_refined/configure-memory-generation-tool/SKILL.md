@@ -24,3 +24,8 @@ def generate_memories(tool_context: ToolContext):
 # Register this function in your LlmAgent tools list
 agent = LlmAgent(..., tools=[generate_memories])
 ```
+
+## Background
+- [Memory: Extraction and Consolidation](https://../../references/google-ai-agents-intensive/2025day3rewritev1contextengineering/25-memory-generation-extraction-and-consolidation.md)
+- [Memory-as-a-Tool](https://../../references/google-ai-agents-intensive/2025day3rewritev1contextengineering/32-memory-as-a-tool.md)
+- [Background vs. Blocking Operations](https://../../references/google-ai-agents-intensive/2025day3rewritev1contextengineering/33-background-vs-blocking-operations.md)

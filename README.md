@@ -22,10 +22,11 @@ The raw extraction process was fully automated using the `skill_extractor.py` pi
 
 ## 📂 Repository Architecture
 
-This repository maintains two primary states of the extracted skills:
+This repository maintains a dual-layer architecture separating conceptual ground-truth from procedural LLM instructions. **Crucially, the skills layer depends heavily on the references layer to provide context.**
 
-1. **`extracted_skills/`**: The raw, unadulterated output straight from the Gemini extraction pipeline.
-2. **`skills_refined/`**: The production-ready directory where skills have been deduplicated, clarified, and optimized for consumption by an overarching orchestrator (like Antigravity).
+1. **`references/` (The "Why"):** A faithful, mechanically split, and citable ground-truth layer. It contains the raw Docling output of the whitepapers, split by heading for targeted referencing. 
+2. **`skills_refined/` (The "How"):** The production-ready directory containing the procedural agentic skills. **Important:** Each `SKILL.md` file contains a `## Background` section that links directly back to specific files in the `references/` directory. Without the `references/` directory, the skills lose their theoretical backing and the agent will be unable to look up the "why" behind the procedural instructions.
+3. **`extracted_skills/`:** The raw, unadulterated output straight from the Gemini extraction pipeline.
 
 ---
 
@@ -93,7 +94,24 @@ This repository is designed to be a "batteries-included" package that supports b
 If you are deploying these skills natively within an environment like the **Antigravity IDE** or any framework that adheres strictly to the `.agents/skills/` auto-discovery standard:
 - **You do NOT need the router or the Python script.** 
 - The framework natively handles Just-In-Time (JIT) context retrieval. It automatically scans the `SKILL.md` files, loads *only* the YAML frontmatter (Level 1) into the system prompt, and retrieves the Markdown body (Level 2/3) only after the skill triggers.
-- **Action:** Simply copy the 31 folders inside `skills_refined/` directly into your `.agents/skills/` directory. Ignore `router.md` and `fetch_skill_blueprint.py`.
+- **Action:** 
+  1. Copy the **contents** of `skills_refined/` directly into your `.agents/skills/` directory (you can safely ignore `router.md` and `fetch_skill_blueprint.py`).
+  2. **CRITICAL:** Copy the entire `references/` folder into your project's root so it sits alongside the `.agents/` folder. Because each skill links to `../../references/...`, you must preserve the relative directory structure so the agent can read the conceptual ground truth! Without it, skills lose their background sources.
+
+**Expected Directory Structure:**
+```text
+your_project_root/
+├── .agents/
+│   └── skills/
+│       ├── create-agent-skill/
+│       │   └── SKILL.md
+│       └── ... (all 31 skills)
+└── references/
+    └── google-ai-agents-intensive/
+        ├── 2025day1rewritev1introductiontoagents/
+        │   └── _index.md
+        └── ... (all reference files)
+```
 
 ### Scenario B: Custom Python Orchestrators (LangChain, OpenAI API, Raw ADK)
 
@@ -101,7 +119,26 @@ If you are building your own custom agent from scratch using Python, loading 31 
 - **Use the Router:** Inject the Level 1 metadata mapping from `skills_refined/router.md` into your agent's base system prompt.
 - **Register the Tool:** Expose the `fetch_skill_blueprint` JSON schema (found in `router.md`) to your LLM.
 - **Implement the Code:** Use the provided `skills_refined/fetch_skill_blueprint.py` script as the executable backing for the tool. This script strips the redundant frontmatter and dynamically feeds the deep Markdown body back to your LLM.
-- **Action:** Use both `router.md` and `fetch_skill_blueprint.py` to enable dynamic JIT context retrieval for your skills.
+- **Action:** 
+  1. Use both `router.md` and `fetch_skill_blueprint.py` to enable dynamic JIT context retrieval for your skills.
+  2. **CRITICAL:** Ensure your Python orchestrator also has access to the `references/` folder and is capable of reading local files when the LLM wants to traverse the links inside the returned skill bodies.
+
+**Expected Directory Structure:**
+```text
+your_project_root/
+├── your_custom_agent.py
+├── router.md (injected into system prompt)
+├── fetch_skill_blueprint.py (tool execution script)
+├── skills_refined/
+│   ├── create-agent-skill/
+│   │   └── SKILL.md
+│   └── ... (all 31 skills)
+└── references/
+    └── google-ai-agents-intensive/
+        ├── 2025day1rewritev1introductiontoagents/
+        │   └── _index.md
+        └── ... (all reference files)
+```
 ## 🤝 Contributing
 
 This repository is auto-generated and refined based on official Google course materials. If you spot parsing errors or formatting issues in the Markdown generation, please open an issue or submit a Pull Request targeting the `skill_extractor.py` pipeline.

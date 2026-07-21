@@ -24,3 +24,8 @@ a2a_app = to_a2a(root_agent, port=8001)
 # Serve with uvicorn
 # uvicorn agent:a2a_app --host localhost --port 8001
 ```
+
+## Background
+- [Agent-to-Agent (A2A) Interoperability](../../references/google-ai-agents-intensive/agent-tools-interoperabilityday2/17-agent-to-agent-a2a-interoperability.md)
+- [Exposing A2A Agent](../../references/google-ai-agents-intensive/agent-tools-interoperabilityday2/25-exposing-a2a-agent.md)
+- [A2A - Reusability and Standardization](../../references/google-ai-agents-intensive/2025day5rewritev1prototype/24-a2a-reusability-and-standardization.md)

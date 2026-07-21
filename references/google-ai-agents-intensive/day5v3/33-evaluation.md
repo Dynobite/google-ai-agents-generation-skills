@@ -1,0 +1,5 @@
+## Evaluation
+
+Why do we need a special quality check for code that uses ML models? Traditional software tests are insufficient for systems whose output is generated rather than computed . An agent - or any ML-driven component like a classifier, summariser, or retriever - can pass 100 unit tests on its tools and still fail spectacularly by choosing the wrong tool, paraphrasing a critical answer, or hallucinating a fact. The error margin isn't a defect to eliminate; it's an inherent property of the model, and the testing strategy has to accommodate it.
+
+Evaluation closes this gap by replacing binary assertions with scored judgments and tolerance bands . A unit test asks "did the function return the right value?" - a binary answer. An evaluation asks "is the agent's behaviour at least as good as the baseline?" a 0-5 score from an LLM-as-judge, a trajectory check that tolerates ordering variance in tool calls, a gate that fires when quality drops below a configurable margin rather than when an assertion flips. Tests catch deterministic regressions; evaluation catches behavioural drift .
