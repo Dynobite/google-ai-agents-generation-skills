@@ -126,10 +126,54 @@ To prevent context window bloat, use the **Agentic Routing System** in `skills_r
 
 ---
 
-## 🚀 Usage Guide
+## 🚀 How to Use (Recommended Architecture)
 
-### Native Coding Assistants (Antigravity IDE, Claude Code, Cursor)
-Copy the skills you need into `.agents/skills/` (or your IDE's skills folder):
+To construct AI agents efficiently, adopt a **Global vs. Local Project** skill separation. This keeps developer tooling global while project-specific security, sandboxing, and MCP rules stay localized inside your repository.
+
+### Recommended Environment Layout
+
+```text
+# GLOBAL CONFIGURATION (Installed via agents-cli)
+~/.gemini/config/skills/               <-- Global CLI & ADK Workflow Skills
+├── google-agents-cli-adk-code/
+├── google-agents-cli-deploy/
+├── google-agents-cli-eval/
+├── google-agents-cli-observability/
+├── google-agents-cli-publish/
+├── google-agents-cli-scaffold/
+└── google-agents-cli-workflow/
+
+# LOCAL REPOSITORY WORKSPACE
+your_agent_project/
+├── .agents/
+│   └── skills/                         <-- Local Project Addition Skills
+│       ├── configure-agentic-security-guardrails/
+│       ├── configure-mcp-server-connection/
+│       ├── context-hygiene-and-pii-masking/
+│       ├── implement-ephemeral-sandboxing-for-agentic-code-execution/
+│       └── ... (copied from skills_refined/addition_skills/)
+├── references/                         <-- Preserved ground-truth reference files
+├── src/
+│   └── agent.py
+└── README.md
+```
+
+### Why Use Global vs. Local Skill Separation?
+
+1. **Clear Separation of Scope**:
+   - **Global Scope (`agents-cli` skills)**: Manages developer operations (scaffolding projects, running evaluations, managing deployments, publishing agents).
+   - **Local Project Scope (`addition_skills/`)**: Manages application-specific safety and architecture (PII masking, security guardrails, JIT IAM policies, sandboxing, MCP tools, A2UI).
+2. **Context Efficiency & Zero Trigger Conflict**:
+   - Keeps your coding agent's prompt clean. The agent uses global skills for CLI workflows and activates local project skills only when writing application logic inside that repository.
+3. **Version-Controlled Standards**:
+   - By storing `addition_skills` in your project's `.agents/skills/` directory, security boundaries and MCP configurations are checked into Git and shared across your entire development team.
+
+---
+
+### Usage Modes
+
+#### Mode A: Native Coding Assistants (Antigravity IDE, Claude Code, Cursor)
+Copy the required project skills from `skills_refined/addition_skills/` into your project's `.agents/skills/` directory:
 ```text
 your_project_root/
 ├── .agents/
@@ -139,10 +183,10 @@ your_project_root/
 └── references/
 ```
 
-### Custom Python Agent Orchestrators
+#### Mode B: Custom Python Agent Orchestrators
 1. Inject system prompt Level 1 metadata from `skills_refined/router.md`.
-2. Register `fetch_skill_blueprint` function using schema in `router.md`.
-3. Use `skills_refined/fetch_skill_blueprint.py` as the execution handler.
+2. Register `fetch_skill_blueprint` function using the schema in `router.md`.
+3. Use `skills_refined/fetch_skill_blueprint.py` as the tool execution handler.
 
 ---
 
