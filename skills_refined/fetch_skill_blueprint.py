@@ -16,10 +16,21 @@ def fetch_skill_blueprint(skill_id: str, context_reason: str) -> str:
     """
     # Resolve the directory of this script to locate the skills folders
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    skill_dir = os.path.join(base_dir, skill_id)
-    skill_file = os.path.join(skill_dir, "SKILL.md")
     
-    if not os.path.exists(skill_file):
+    # Candidate paths: base_dir, agents_cli_similar, addition_skills
+    candidate_paths = [
+        os.path.join(base_dir, skill_id, "SKILL.md"),
+        os.path.join(base_dir, "agents_cli_similar", skill_id, "SKILL.md"),
+        os.path.join(base_dir, "addition_skills", skill_id, "SKILL.md"),
+    ]
+    
+    skill_file = None
+    for p in candidate_paths:
+        if os.path.exists(p):
+            skill_file = p
+            break
+    
+    if not skill_file:
         return (f"Error: Skill '{skill_id}' not found. "
                 f"Please ensure the skill_id exactly matches the folder name.")
         
