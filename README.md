@@ -4,6 +4,7 @@
 ![Docling Extraction](https://img.shields.io/badge/Extraction-Docling%20%7C%20Gemini-orange)
 ![Spec Driven](https://img.shields.io/badge/Methodology-Spec%20Driven%20Development-success)
 ![agents-cli Compatible](https://img.shields.io/badge/agents--cli-Compatible-green)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--07--27-brightgreen)
 
 Welcome to the **Google AI Agents Course Skills Repository**. This repository contains a curated collection of 31 canonical Agent Skills extracted from Google's intensive agentic courses on Kaggle and official whitepapers.
 
