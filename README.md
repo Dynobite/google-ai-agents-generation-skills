@@ -102,10 +102,10 @@ To prevent context window bloat, use the **Agentic Routing System** in `skills_r
 ### 🏛 Section B: Agents-CLI Similar Skills (`skills_refined/agents_cli_similar/`)
 *13 skills detailing architectural patterns that overlap with built-in `agents-cli` commands:*
 
-#### 📊 Evaluation (Overlap with `google-agents-cli-eval`)
+#### 📊 Evaluation & Testing (Overlap with `google-agents-cli-eval`)
 - **derive-intent-satisfaction-rubrics-from-session-prefixes**: Evaluate output against underspecified intent.
 - **implement-agent-as-a-judge-evaluation**: Automate LLM-as-a-judge evaluation of trajectories.
-- **implement-agentic-evaluation-suite**: Verify code and output correctness in workflows.
+- **test-driven-development**: Enforce strict TDD and executable test contracts before writing code.
 - **implement-evaluation-driven-development**: Define test specifications before writing agent code.
 - **implement-multi-turn-session-convergence-tracking**: Measure task convergence efficiency over turns.
 

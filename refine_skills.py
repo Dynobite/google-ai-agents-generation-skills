@@ -94,7 +94,7 @@ When you identify that a user's request requires one of the capabilities listed 
 - configure-agent-tracing-with-opentelemetry: End-to-end execution narrative and telemetry.
 - implement-agent-observability-via-structured-logging: Capture internal thought processes.
 - implement-agent-as-a-judge-evaluation: Automate evaluation of reasoning/tool usage.
-- implement-agentic-evaluation-suite: Verify code/trajectory correctness in workflows.
+- test-driven-development: Enforce strict TDD and executable test contracts before writing code.
 - derive-intent-satisfaction-rubrics-from-session-prefixes: Evaluate output against underspecified intent.
 - evaluate-skill-trigger: Validate routing accuracy before deployment.
 - implement-evaluation-driven-development: Define functional specs prior to implementation.

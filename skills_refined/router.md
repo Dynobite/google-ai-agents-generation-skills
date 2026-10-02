@@ -42,10 +42,10 @@ When you identify that a user's request requires one of the capabilities listed 
 #### SECTION B: AGENTS-CLI SIMILAR SKILLS (`agents_cli_similar/`)
 *(Skills that overlap or conflict with standard `agents-cli` built-in commands - reference for alternative/custom patterns)*
 
-[Evaluation Patterns] (Overlaps with `google-agents-cli-eval`)
+[Evaluation & Test Patterns] (Overlaps with `google-agents-cli-eval`)
 - derive-intent-satisfaction-rubrics-from-session-prefixes: Evaluate output against underspecified intent.
 - implement-agent-as-a-judge-evaluation: Automate evaluation of reasoning/tool usage.
-- implement-agentic-evaluation-suite: Verify code/trajectory correctness in workflows.
+- test-driven-development: Enforce strict TDD and executable test contracts before writing code.
 - implement-evaluation-driven-development: Define functional specs prior to implementation.
 - implement-multi-turn-session-convergence-tracking: Measure workflow efficiency over turns.
 
